@@ -36,7 +36,7 @@ body {
 }
 header {
   border-bottom: 3px solid $blue;
-  height: 98px;
+  height: 5.1vw;
   .logo {
     width: 30vw;
     height: auto;
@@ -180,9 +180,9 @@ header {
     position: absolute;
 
     transform: skewX(-20deg);
-    top: -98px;
-    right: 197px;
-    width: 828px;
+    top: -5.1vw;
+    right: 9.26vw;
+    width: 43.12vw;
     height: 100vh;
     animation: 2s homehero 0s forwards ease-out,
       0.2s goout 2s forwards ease-in-out;
@@ -232,19 +232,19 @@ header {
   }
 
   100% {
-    right: 197px;
-    width: 828px;
+    right: 9.26vw;
+    width: 43.12vw;
     height: 100vh;
   }
 }
 
 @keyframes goout {
   0% {
-    right: 197px;
+    right: 9.26vw;
     height: 100vh;
   }
   100% {
-    right: -197px;
+    right: -9.26vw;
     top: calc(-100vh - 100px);
     height: 100vh;
     opacity: 0;
