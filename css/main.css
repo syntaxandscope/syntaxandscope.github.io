@@ -220,8 +220,8 @@ header nav ul li.active:after {
   right: 9.26vw;
   width: 43.12vw;
   height: 100vh;
-  -webkit-animation: 2s homehero 0s forwards ease-out, 0.2s goout 2s forwards ease-in-out;
-          animation: 2s homehero 0s forwards ease-out, 0.2s goout 2s forwards ease-in-out;
+  -webkit-animation: 2s homehero 0s forwards ease-out, 0.4s goout 2s forwards ease-in-out;
+          animation: 2s homehero 0s forwards ease-out, 0.4s goout 2s forwards ease-in-out;
 }
 
 .home-hero:after {
