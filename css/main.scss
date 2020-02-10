@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif|Poppins:300,400,500,600,700&display=swap");
+$poppins: "Poppins", sans-serif;
+$gray: #707070;
+$blue: #1854d0;
+$darkblue: #003093;
+body {
+  font-family: $poppins;
+  overflow-x: hidden;
+}
+
+@mixin btn_syntax_primary() {
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff !important;
+  background: $blue;
+  transition: all 300ms;
+  text-decoration: none !important;
+  display: inline-block;
+  &:hover {
+    box-shadow: 0px 20px 50px rgba($blue, 0.3%);
+    background: darken($blue, 5%);
+  }
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 50px;
+  border-radius: 50px;
+}
+.btn-syntax-primary {
+  @include btn_syntax_primary();
+}
+.btn-syntax-primary {
+  &.btn-o {
+    background: transparent;
+    border: 3px solid #fff;
+  }
+}
+header {
+  border-bottom: 3px solid $blue;
+  height: 98px;
+  .logo {
+    width: 30vw;
+    height: auto;
+    position: absolute;
+    z-index: 1000;
+    top: 18vw;
+    left: 5vw;
+    animation: 0.5s logoToTop 5.3s forwards;
+    svg {
+      width: 100%;
+      height: auto;
+      #Group_1 {
+        path {
+          opacity: 0;
+        }
+      }
+
+      #Path_13 {
+        transform: translate(15px, 20px) rotate(90deg);
+        position: absolute;
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: 0.3s path13 4s forwards;
+      }
+      #Path_14 {
+        transform: translate(-26px, -33px) rotate(90deg);
+        position: absolute;
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: 0.3s path14 4s forwards;
+      }
+      #Path_15 {
+        animation: 0.3s appear 3.6s forwards;
+      }
+
+      #Path_16 {
+        animation: 0.3s appear 3.3s forwards;
+      }
+      #Path_17 {
+        animation: 0.3s appear 3s forwards;
+      }
+      #syntax {
+        animation: 0.3s appear 4.3s forwards;
+        opacity: 0;
+      }
+      #and {
+        animation: 0.3s appear 4.6s forwards;
+        opacity: 0;
+      }
+      #scope {
+        animation: 0.3s appear 4.9s forwards;
+        opacity: 0;
+      }
+    }
+  }
+  nav {
+    margin-left: 270px;
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      li {
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+          font-size: 18px;
+          display: block;
+          color: $gray;
+          padding: 0 20px;
+          text-transform: uppercase;
+          text-decoration: none !important;
+          text-align: center;
+          &:hover {
+            color: #000;
+          }
+        }
+        &.active {
+          a {
+            color: $blue;
+            font-weight: 700;
+          }
+          &:after {
+            content: " ";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 10px 7px 10px;
+            border-color: transparent transparent #1855d0 transparent;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+}
+.hero-img {
+  position: absolute;
+  right: 0;
+  z-index: 50;
+  top: 0;
+  width: 1152px;
+  height: 0;
+  overflow: hidden;
+  animation: 0.5s heroimg 2s forwards;
+
+  img {
+    width: 100%;
+  }
+}
+.home-hero {
+  // background: $blue;
+  position: relative;
+  padding: 140px 0 170px;
+  h1 {
+    color: #fff;
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    position: relative;
+    opacity: 0;
+    animation: 0.8s slideUp 5.2s forwards;
+  }
+  .btn-syntax-primary {
+    position: relative;
+
+    opacity: 0;
+    animation: 0.8s slideUp 5.2s forwards;
+  }
+  &:before {
+    content: " ";
+    background: $blue;
+    position: absolute;
+
+    transform: skewX(-20deg);
+    top: -98px;
+    right: 197px;
+    width: 828px;
+    height: 100vh;
+    animation: 2s homehero 0s forwards ease-out,
+      0.2s goout 2s forwards ease-in-out;
+  }
+  &:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: $blue;
+    height: 100%;
+    animation: 1s bg 2s forwards;
+    z-index: -1;
+    opacity: 0;
+  }
+}
+
+@keyframes bg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes heroimg {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 50.67vw;
+  }
+}
+@keyframes homehero {
+  0% {
+    right: 200vw;
+    width: 400vw;
+    height: 100vh;
+  }
+  50% {
+    right: -100vw;
+    width: 400vw;
+    height: 100vh;
+  }
+
+  100% {
+    right: 197px;
+    width: 828px;
+    height: 100vh;
+  }
+}
+
+@keyframes goout {
+  0% {
+    right: 197px;
+    height: 100vh;
+  }
+  100% {
+    right: -197px;
+    top: calc(-100vh - 100px);
+    height: 100vh;
+    opacity: 0;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    top: -100px;
+    left: -50px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes path13 {
+  0% {
+    transform: translate(15px, 20px) rotate(90deg);
+  }
+  100% {
+    transform: translate(-5.401px, 0px) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes path14 {
+  0% {
+    transform: translate(-26px, -33px) rotate(90deg);
+  }
+  100% {
+    transform: translate(-5.401px, -12.795px) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes logoToTop {
+  0% {
+    width: 30vw;
+    top: 18vw;
+    left: 5vw;
+  }
+  100% {
+    width: 9vw;
+    top: 1vw;
+    left: 1vw;
+  }
+}
+
+
+
+
+@media (min-width: 1200px) {
+header {
+height: 5.1vw;
+}
+  header nav{
+    margin-left: 14vw;
+  }
+  header nav ul li a{
+    font-size: 1vw;
+    padding:0 1vw;
+  }
+  .container {
+    max-width: 85vw;
+  }
+  .hero-img {
+    width: 60vw;
+  }
+  .home-hero {
+    padding: 7.29vw 0 8.85vw;
+    h1 {
+      font-size: 2.5vw;
+      line-height: 3.75vw;
+      margin-bottom: 3.125vw;
+    }
+    .btn-syntax-primary {
+      font-size: 1.45vw;
+      padding: 1.04vw 2.6vw;
+    }
+  }
+}
