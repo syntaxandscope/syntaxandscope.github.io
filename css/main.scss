@@ -47,6 +47,7 @@ header {
     animation: 0.5s logoToTop 5.3s forwards;
     svg {
       width: 100%;
+      overflow: visible;
       height: auto;
       #Group_1 {
         path {
@@ -59,24 +60,30 @@ header {
         position: absolute;
         transform-box: fill-box;
         transform-origin: center;
-        animation: 0.3s path13 4s forwards;
+        animation: 0.3s path13 4s forwards cubic-bezier(0.18, 0.02, 0, 2.01), 0.5s backtoblue 5.3s forwards;
       }
       #Path_14 {
         transform: translate(-26px, -33px) rotate(90deg);
         position: absolute;
         transform-box: fill-box;
         transform-origin: center;
-        animation: 0.3s path14 4s forwards;
+        animation: 0.3s path14 4s forwards cubic-bezier(0.18, 0.02, 0, 2.01), 0.5s backtoblue 5.3s forwards;
       }
       #Path_15 {
-        animation: 0.3s appear 3.6s forwards;
+        animation: 0.3s appear 3.6s forwards, 0.5s backtoblue 5.3s forwards;
       }
 
       #Path_16 {
-        animation: 0.3s appear 3.3s forwards;
+        // animation: 0.3s appear 3s forwards;
+        animation: 1s animateslash 2s forwards ease, 0.3s flash 2.8s forwards, 0.5s backtoblue 5.3s forwards;
+        z-index: 50050505050;
+        position: relative;
+        z-index: 5050;
+        transform-origin: center;
+        transform-box: fill-box;
       }
       #Path_17 {
-        animation: 0.3s appear 3s forwards;
+        animation: 0.3s appear 3.3s forwards, 0.5s backtoblue 5.3s forwards;
       }
       #syntax {
         animation: 0.3s appear 4.3s forwards;
@@ -162,17 +169,20 @@ header {
     color: #fff;
     font-size: 48px;
     line-height: 72px;
-    font-weight: bold;
+    font-weight: 400;
     margin-bottom: 60px;
     position: relative;
     opacity: 0;
-    animation: 0.8s slideUp 5.2s forwards;
+    animation: 0.8s appear 5.2s forwards;
+    strong{
+      font-weight: bold;
+    }
   }
   .btn-syntax-primary {
     position: relative;
 
     opacity: 0;
-    animation: 0.8s slideUp 5.2s forwards;
+    animation: 0.8s appear 5.2s forwards;
   }
   &:before {
     content: " ";
@@ -194,12 +204,28 @@ header {
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgb(100,142,228);
-background: radial-gradient(circle, rgba(100,142,228,1) 0%, rgba(52,109,227,1) 29%, rgba(24,84,208,1) 100%);
+    background: rgb(100, 142, 228);
+    background: radial-gradient(
+      circle,
+      rgba(100, 142, 228, 1) 0%,
+      rgba(52, 109, 227, 1) 29%,
+      rgba(24, 84, 208, 1) 100%
+    );
     height: 100%;
     animation: 1s bg 2s forwards;
     z-index: -1;
     opacity: 0;
+  }
+}
+@keyframes animateslash {
+  0% {
+    transform: translate(21vw, 0) rotate(-25deg) scale(14);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-5.394px, -5.424px) rotate(360deg) scale(1);
+    opacity: 1;
   }
 }
 
@@ -264,7 +290,26 @@ background: radial-gradient(circle, rgba(100,142,228,1) 0%, rgba(52,109,227,1) 2
     opacity: 1;
   }
 }
+@keyframes backtoblue{
+  to{
+  fill:$blue;
+  }
+}
 
+@keyframes flash {
+  0% {
+    transform: translate(-5.394px, -5.424px) rotate(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-5.394px, -5.424px) rotate(0) scale(2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-5.394px, -5.424px) rotate(0) scale(1);
+    opacity: 1;
+  }
+}
 @keyframes path13 {
   0% {
     transform: translate(15px, 20px) rotate(90deg);
@@ -306,19 +351,16 @@ background: radial-gradient(circle, rgba(100,142,228,1) 0%, rgba(52,109,227,1) 2
   }
 }
 
-
-
-
 @media (min-width: 1200px) {
-header {
-height: 5.1vw;
-}
-  header nav{
+  header {
+    height: 5.1vw;
+  }
+  header nav {
     margin-left: 14vw;
   }
-  header nav ul li a{
+  header nav ul li a {
     font-size: 1vw;
-    padding:0 1vw;
+    padding: 0 1vw;
   }
   .container {
     max-width: 85vw;
@@ -328,6 +370,7 @@ height: 5.1vw;
   }
   .home-hero {
     padding: 7.29vw 0 8.85vw;
+    min-height: 35vw;
     h1 {
       font-size: 2.5vw;
       line-height: 3.75vw;

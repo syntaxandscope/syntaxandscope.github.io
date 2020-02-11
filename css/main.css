@@ -48,6 +48,7 @@ header .logo {
 
 header .logo svg {
   width: 100%;
+  overflow: visible;
   height: auto;
 }
 
@@ -62,8 +63,8 @@ header .logo svg #Path_13 {
   transform-box: fill-box;
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-animation: 0.3s path13 4s forwards;
-          animation: 0.3s path13 4s forwards;
+  -webkit-animation: 0.3s path13 4s forwards cubic-bezier(0.18, 0.02, 0, 2.01), 0.5s backtoblue 5.3s forwards;
+          animation: 0.3s path13 4s forwards cubic-bezier(0.18, 0.02, 0, 2.01), 0.5s backtoblue 5.3s forwards;
 }
 
 header .logo svg #Path_14 {
@@ -73,23 +74,29 @@ header .logo svg #Path_14 {
   transform-box: fill-box;
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-animation: 0.3s path14 4s forwards;
-          animation: 0.3s path14 4s forwards;
+  -webkit-animation: 0.3s path14 4s forwards cubic-bezier(0.18, 0.02, 0, 2.01), 0.5s backtoblue 5.3s forwards;
+          animation: 0.3s path14 4s forwards cubic-bezier(0.18, 0.02, 0, 2.01), 0.5s backtoblue 5.3s forwards;
 }
 
 header .logo svg #Path_15 {
-  -webkit-animation: 0.3s appear 3.6s forwards;
-          animation: 0.3s appear 3.6s forwards;
+  -webkit-animation: 0.3s appear 3.6s forwards, 0.5s backtoblue 5.3s forwards;
+          animation: 0.3s appear 3.6s forwards, 0.5s backtoblue 5.3s forwards;
 }
 
 header .logo svg #Path_16 {
-  -webkit-animation: 0.3s appear 3.3s forwards;
-          animation: 0.3s appear 3.3s forwards;
+  -webkit-animation: 1s animateslash 2s forwards ease, 0.3s flash 2.8s forwards, 0.5s backtoblue 5.3s forwards;
+          animation: 1s animateslash 2s forwards ease, 0.3s flash 2.8s forwards, 0.5s backtoblue 5.3s forwards;
+  z-index: 50050505050;
+  position: relative;
+  z-index: 5050;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
 }
 
 header .logo svg #Path_17 {
-  -webkit-animation: 0.3s appear 3s forwards;
-          animation: 0.3s appear 3s forwards;
+  -webkit-animation: 0.3s appear 3.3s forwards, 0.5s backtoblue 5.3s forwards;
+          animation: 0.3s appear 3.3s forwards, 0.5s backtoblue 5.3s forwards;
 }
 
 header .logo svg #syntax {
@@ -195,19 +202,23 @@ header nav ul li.active:after {
   color: #fff;
   font-size: 48px;
   line-height: 72px;
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 60px;
   position: relative;
   opacity: 0;
-  -webkit-animation: 0.8s slideUp 5.2s forwards;
-          animation: 0.8s slideUp 5.2s forwards;
+  -webkit-animation: 0.8s appear 5.2s forwards;
+          animation: 0.8s appear 5.2s forwards;
+}
+
+.home-hero h1 strong {
+  font-weight: bold;
 }
 
 .home-hero .btn-syntax-primary {
   position: relative;
   opacity: 0;
-  -webkit-animation: 0.8s slideUp 5.2s forwards;
-          animation: 0.8s slideUp 5.2s forwards;
+  -webkit-animation: 0.8s appear 5.2s forwards;
+          animation: 0.8s appear 5.2s forwards;
 }
 
 .home-hero:before {
@@ -238,6 +249,32 @@ header nav ul li.active:after {
           animation: 1s bg 2s forwards;
   z-index: -1;
   opacity: 0;
+}
+
+@-webkit-keyframes animateslash {
+  0% {
+    -webkit-transform: translate(21vw, 0) rotate(-25deg) scale(14);
+            transform: translate(21vw, 0) rotate(-25deg) scale(14);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(-5.394px, -5.424px) rotate(360deg) scale(1);
+            transform: translate(-5.394px, -5.424px) rotate(360deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animateslash {
+  0% {
+    -webkit-transform: translate(21vw, 0) rotate(-25deg) scale(14);
+            transform: translate(21vw, 0) rotate(-25deg) scale(14);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(-5.394px, -5.424px) rotate(360deg) scale(1);
+            transform: translate(-5.394px, -5.424px) rotate(360deg) scale(1);
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes bg {
@@ -364,6 +401,54 @@ header nav ul li.active:after {
   }
 }
 
+@-webkit-keyframes backtoblue {
+  to {
+    fill: #1854d0;
+  }
+}
+
+@keyframes backtoblue {
+  to {
+    fill: #1854d0;
+  }
+}
+
+@-webkit-keyframes flash {
+  0% {
+    -webkit-transform: translate(-5.394px, -5.424px) rotate(0) scale(1);
+            transform: translate(-5.394px, -5.424px) rotate(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translate(-5.394px, -5.424px) rotate(0) scale(2);
+            transform: translate(-5.394px, -5.424px) rotate(0) scale(2);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translate(-5.394px, -5.424px) rotate(0) scale(1);
+            transform: translate(-5.394px, -5.424px) rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    -webkit-transform: translate(-5.394px, -5.424px) rotate(0) scale(1);
+            transform: translate(-5.394px, -5.424px) rotate(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translate(-5.394px, -5.424px) rotate(0) scale(2);
+            transform: translate(-5.394px, -5.424px) rotate(0) scale(2);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translate(-5.394px, -5.424px) rotate(0) scale(1);
+            transform: translate(-5.394px, -5.424px) rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes path13 {
   0% {
     -webkit-transform: translate(15px, 20px) rotate(90deg);
@@ -475,6 +560,7 @@ header nav ul li.active:after {
   }
   .home-hero {
     padding: 7.29vw 0 8.85vw;
+    min-height: 35vw;
   }
   .home-hero h1 {
     font-size: 2.5vw;
