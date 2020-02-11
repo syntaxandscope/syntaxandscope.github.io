@@ -194,7 +194,8 @@ header {
     right: 0;
     top: 0;
     bottom: 0;
-    background: $blue;
+    background: rgb(100,142,228);
+background: radial-gradient(circle, rgba(100,142,228,1) 0%, rgba(52,109,227,1) 29%, rgba(24,84,208,1) 100%);
     height: 100%;
     animation: 1s bg 2s forwards;
     z-index: -1;

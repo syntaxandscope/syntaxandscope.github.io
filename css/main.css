@@ -220,8 +220,8 @@ header nav ul li.active:after {
   right: 9.26vw;
   width: 43.12vw;
   height: 100vh;
-  -webkit-animation: 2s homehero 0s forwards ease-out, 0.4s goout 2s forwards ease-in-out;
-          animation: 2s homehero 0s forwards ease-out, 0.4s goout 2s forwards ease-in-out;
+  -webkit-animation: 2s homehero 0s forwards ease-out, 0.4s goout 2s forwards ease-in-out;
+          animation: 2s homehero 0s forwards ease-out, 0.4s goout 2s forwards ease-in-out;
 }
 
 .home-hero:after {
@@ -231,7 +231,8 @@ header nav ul li.active:after {
   right: 0;
   top: 0;
   bottom: 0;
-  background: #1854d0;
+  background: #648ee4;
+  background: radial-gradient(circle, #648ee4 0%, #346de3 29%, #1854d0 100%);
   height: 100%;
   -webkit-animation: 1s bg 2s forwards;
           animation: 1s bg 2s forwards;
