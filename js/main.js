@@ -18,9 +18,8 @@ $(function() {
     loop: true
   });
 
-  typewriter
-    .pauseFor(5500)
-  
+ setTimeout(() => {
+    typewriter
     .typeString("<strong>Experience</strong>")
     .pauseFor(1000)
     .deleteChars(10)
@@ -31,4 +30,5 @@ $(function() {
     .pauseFor(1000)
     .pauseFor(1000)
     .start();
+ }, 6000);
 });
