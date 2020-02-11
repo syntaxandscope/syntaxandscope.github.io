@@ -21,17 +21,14 @@ $(function() {
   typewriter
     .pauseFor(5500)
   
-    .typeString("We Bring")
-    .pauseFor(300)
-    .typeString("<strong> experience,</strong>")
+    .typeString("<strong>Experience</strong>")
     .pauseFor(1000)
-    .deleteChars(11)
-    .typeString("<strong>compliance </strong>")
+    .deleteChars(10)
+    .typeString("<strong>Compliance</strong>")
     .pauseFor(1000)
-    .deleteChars(11)
-    .typeString("<strong>and standards</strong>")
+    .deleteChars(10)
+    .typeString("<strong>Standards</strong>")
     .pauseFor(1000)
-    .typeString("<br>to professional services")
     .pauseFor(1000)
     .start();
 });
