@@ -20,8 +20,8 @@ body {
 }
 
 .btn-syntax-primary:hover {
-  -webkit-box-shadow: 0px 20px 50px rgba(24, 84, 208, 0.3);
-          box-shadow: 0px 20px 50px rgba(24, 84, 208, 0.3);
+  -webkit-box-shadow: 0px 20px 50px rgba(24, 84, 208, 0.5);
+          box-shadow: 0px 20px 50px rgba(24, 84, 208, 0.5);
   background: #154bb9;
 }
 
@@ -84,8 +84,8 @@ header .logo svg #Path_15 {
 }
 
 header .logo svg #Path_16 {
-  -webkit-animation: 1s animateslash 2s forwards ease, 0.3s flash 2.8s forwards, 0.5s backtoblue 5.3s forwards;
-          animation: 1s animateslash 2s forwards ease, 0.3s flash 2.8s forwards, 0.5s backtoblue 5.3s forwards;
+  -webkit-animation: 1s animateslash 2s forwards ease, 0.3s flash 2.8s forwards, 0.5s backtoblue 5.3s forwards;
+          animation: 1s animateslash 2s forwards ease, 0.3s flash 2.8s forwards, 0.5s backtoblue 5.3s forwards;
   z-index: 50050505050;
   position: relative;
   z-index: 5050;
@@ -249,6 +249,145 @@ header nav ul li.active:after {
           animation: 1s bg 2s forwards;
   z-index: -1;
   opacity: 0;
+}
+
+.home-about {
+  padding-top: 17.2vw;
+}
+
+.home-about h2 {
+  font-size: 38px;
+  line-height: 57px;
+  color: #1854d0;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.home-about h2 span {
+  color: #707070;
+}
+
+.home-about .home-about-main-desc .graylogo {
+  position: absolute;
+  top: -140px;
+  left: 0;
+}
+
+.home-about .home-about-main-desc p {
+  font-size: 22px;
+  line-height: 45px;
+  color: #000;
+}
+
+.home-about .about-carousel {
+  padding-right: 100px;
+}
+
+.home-about .about-carousel .owl-nav button.owl-next {
+  position: absolute;
+  right: 0;
+  top: 80px;
+  outline: none;
+}
+
+.home-about .about-carousel .item .item-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 15px;
+}
+
+.home-about .about-carousel .item h4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #1854d0;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.home-about .about-carousel .item h6 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #707070;
+  text-transform: uppercase;
+}
+
+.home-about .home-about-bottom {
+  margin-top: 180px;
+  margin-bottom: 160px;
+}
+
+.home-about .home-about-bottom p {
+  font-size: 20px;
+  line-height: 36px;
+  color: #000;
+}
+
+.home-about .home-about-bottom h3 {
+  font-size: 32px;
+  line-height: 48px;
+  color: #1854d0;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.home-about .home-about-bottom h3 span {
+  color: #707070;
+}
+
+.home-services {
+  background: #648ee4;
+  background: radial-gradient(circle, #648ee4 0%, #346de3 29%, #1854d0 100%);
+  padding: 120px 0;
+}
+
+.home-services h2 {
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #FFF;
+  margin-bottom: 80px;
+}
+
+.home-services .service-item {
+  border-right: 2px dashed rgba(0, 48, 147, 0.15);
+}
+
+.home-services .service-item:last-child {
+  border-right: none;
+}
+
+.home-services .service-item .service-item-img {
+  height: 90px;
+  margin-bottom: 20px;
+}
+
+.home-services .service-item h4 {
+  font-size: 26px;
+  line-height: 35px;
+  color: #FFF;
+  letter-spacing: 1px;
+}
+
+.home-services .home-services-desc {
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFF;
+  margin-top: 50px;
+}
+
+.home-services .home-services-desc .btn-syntax-primary {
+  text-transform: initial;
+  font-size: 22px;
+  margin-top: 50px;
+}
+
+.home-services .home-services-desc .btn-syntax-primary:hover {
+  background: rgba(24, 84, 208, 0.8);
 }
 
 @-webkit-keyframes animateslash {
