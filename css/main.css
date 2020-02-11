@@ -467,7 +467,7 @@ footer {
   background: #003093;
   border-top: 6px solid #1854d0;
   padding: 70px 0;
-  color: #FFF;
+  color: #fff;
   font-size: 20px;
   font-weight: 300;
 }
@@ -477,7 +477,7 @@ footer .nav-item {
 }
 
 footer .nav-link {
-  color: #FFF;
+  color: #fff;
   padding: 0 15px;
   font-size: 20px;
   font-weight: 300;
@@ -806,9 +806,6 @@ footer .nav-link img {
     font-size: 1vw;
     padding: 0 1vw;
   }
-  .container {
-    max-width: 85vw;
-  }
   .hero-img {
     width: 60vw;
   }
@@ -824,6 +821,18 @@ footer .nav-link img {
   .home-hero .btn-syntax-primary {
     font-size: 1.45vw;
     padding: 1.04vw 2.6vw;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .container {
+    max-width: 85vw;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1630px !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
