@@ -1,0 +1,262 @@
+@media (min-width: 1200px) {
+  header {
+    height: 5.1vw;
+  }
+  header nav {
+    margin-left: 14vw;
+  }
+  header nav ul li a {
+    font-size: 1vw;
+    padding: 0 1vw;
+  }
+
+  .hero-img {
+    width: 60vw;
+  }
+  .home-hero {
+    padding: 7.29vw 0 8.85vw;
+    min-height: 35vw;
+    h1 {
+      font-size: 2.5vw;
+      line-height: 3.75vw;
+      margin-bottom: 3.125vw;
+    }
+    .btn-syntax-primary {
+      font-size: 1.45vw;
+      padding: 1.04vw 2.6vw;
+    }
+  }
+  .home-about .home-about-main-desc .graylogo {
+    width: 31vw;
+    top: -7.3vw;
+  }
+  .home-about h2 {
+    font-size: 2vw;
+    line-height: 2.96vw;
+  }
+  .home-about .home-about-main-desc p {
+    font-size: 1.14vw;
+    line-height: 2.3vw;
+  }
+  .home-about .about-carousel .item .item-avatar {
+    width: 7.8vw;
+    height: 7.8vw;
+  }
+  .home-about .about-carousel .item h4 {
+    font-size: 1vw;
+    line-height: 1.5vw;
+  }
+  .home-about .about-carousel .item h6 {
+    font-size: 0.85vw;
+    line-height: 1.2vw;
+  }
+  .home-about .about-carousel {
+    padding-right: 5.2vw;
+  }
+  .home-about .about-carousel .owl-nav button.owl-next {
+    top: 4vw;
+  }
+  .home-about .about-carousel .owl-nav button.owl-next img {
+    width: 2vw;
+  }
+  .home-about .home-about-bottom {
+    margin-top: 9.3vw;
+    margin-bottom: 8.3vw;
+    h3 {
+      font-size: 1.1vw;
+      line-height: 1.7vw;
+    }
+    p {
+      font-size: 1.1vw;
+      line-height: 1.9vw;
+    }
+  }
+  .home-services {
+    padding: 6.25vw 0;
+    h2 {
+      font-size: 2.1vw;
+      line-height: 3.2vw;
+    }
+    .service-item .service-item-img {
+      height: 5vw;
+    }
+    .service-item h4 {
+      font-size: 1.4vw;
+      line-height: 1.9vw;
+    }
+    .home-services-desc {
+      font-size: 1.1vw;
+      line-height: 1.9vw;
+      margin-top: 2.6vw;
+      .btn-syntax-primary {
+        margin-top: 2.6vw;
+        font-size: 1.2vw;
+        line-height: 1.9vw;
+      }
+    }
+  }
+  .home-blocks .block-item .block-content h3 {
+    font-size: 1.3vw;
+    line-height: 1.7vw;
+  }
+  .home-blocks .block-item .block-content p {
+    font-size: 1vw;
+    line-height: 1.7vw;
+  }
+  .home-blocks .block-item.contact-block h2 {
+    font-size: 1.9vw;
+    line-height: 2.7vw;
+  }
+  .home-blocks .block-item.contact-block .btn-syntax-primary {
+    font-size: 1.3vw;
+  }
+  .home-blocks {
+    padding-top: 7.8vw;
+    padding-bottom: 7.8vw;
+  }
+  footer {
+    font-size: 1.1vw;
+  }
+  footer .nav-link img {
+    width: 1.1vw;
+  }
+  footer .nav-link {
+    font-size: 1.1vw;
+  }
+  footer .footer-logo {
+    width: 9.3vw;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .container {
+    max-width: 85vw;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .container {
+    max-width: 90vw;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1630px !important;
+  }
+}
+@media (max-width: 1199px) {
+  #logodesktop {
+    display: none;
+  }
+  header .logo {
+    width: 50px;
+    margin: 10px;
+  }
+  header .logo #logomobile {
+    display: block;
+    width: 100%;
+  }
+  header {
+    height: auto;
+
+    .mobile-menu {
+      background: transparent;
+      border: none;
+      padding: 0 15px 0 0;
+      outline: none;
+    }
+  }
+
+  .hero-img {
+    display: none;
+  }
+  .home-blocks .block-item.left .block-content,
+  .home-blocks .block-item.right .block-content {
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  header .logo,
+  header .logo svg path {
+    animation: none !important;
+    position: static !important;
+  }
+  header .logo svg #Group_1 path {
+    opacity: 1;
+    fill: $blue;
+  }
+  header .logo svg #syntax,
+  header .logo svg #and,
+  header .logo svg #scope {
+    opacity: 1;
+    animation: none !important;
+  }
+  .home-hero:before {
+    animation: none;
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home-blocks .block-item.contact-block h2 {
+    font-size: 26px;
+    line-height: 38px;
+    letter-spacing: 0px;
+  }
+  .home-services .service-item .service-item-img {
+    height: 65px;
+  }
+  .home-services .service-item h4 {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    position: fixed;
+    top: 0;
+    background: white;
+    left: 0;
+    right: 0;
+    z-index: 5050505050;
+    display: flex;
+    width: 100vw;
+  }
+  .home-about .home-about-main-desc .graylogo{
+      width: 100%;
+      top:100px;
+  }
+  .home-about .about-carousel{
+      padding-right: 0;
+  }
+  .home-services .service-item{
+      border-right: none;
+      flex-basis: 100%;
+      margin-bottom: 20px;
+  }
+  .home-hero{
+      text-align: center;
+  }
+  header nav ul li.active:after{
+      display: none;
+  }
+  header nav ul li{
+      padding:20px 0;
+  }
+  header nav {
+    margin-left: 0;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 5050505050;
+    background: rgba(255, 255, 255, 0.952);
+    display: none;
+    ul {
+      height: auto !important;
+      flex-direction: column;
+    }
+  }
+}

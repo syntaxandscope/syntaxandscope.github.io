@@ -46,17 +46,21 @@ header .logo {
           animation: 0.5s logoToTop 5.3s forwards;
 }
 
-header .logo svg {
+header .logo #logomobile {
+  display: none;
+}
+
+header .logo #logodesktop {
   width: 100%;
   overflow: visible;
   height: auto;
 }
 
-header .logo svg #Group_1 path {
+header .logo #logodesktop #Group_1 path {
   opacity: 0;
 }
 
-header .logo svg #Path_13 {
+header .logo #logodesktop #Path_13 {
   -webkit-transform: translate(15px, 20px) rotate(90deg);
           transform: translate(15px, 20px) rotate(90deg);
   position: absolute;
@@ -67,7 +71,7 @@ header .logo svg #Path_13 {
           animation: 0.3s path13 4s forwards cubic-bezier(0.18, 0.02, 0, 2.01), 0.5s backtoblue 5.3s forwards;
 }
 
-header .logo svg #Path_14 {
+header .logo #logodesktop #Path_14 {
   -webkit-transform: translate(-26px, -33px) rotate(90deg);
           transform: translate(-26px, -33px) rotate(90deg);
   position: absolute;
@@ -78,12 +82,12 @@ header .logo svg #Path_14 {
           animation: 0.3s path14 4s forwards cubic-bezier(0.18, 0.02, 0, 2.01), 0.5s backtoblue 5.3s forwards;
 }
 
-header .logo svg #Path_15 {
+header .logo #logodesktop #Path_15 {
   -webkit-animation: 0.3s appear 3.6s forwards, 0.5s backtoblue 5.3s forwards;
           animation: 0.3s appear 3.6s forwards, 0.5s backtoblue 5.3s forwards;
 }
 
-header .logo svg #Path_16 {
+header .logo #logodesktop #Path_16 {
   -webkit-animation: 1s animateslash 2s forwards ease, 0.3s flash 2.8s forwards, 0.5s backtoblue 5.3s forwards;
           animation: 1s animateslash 2s forwards ease, 0.3s flash 2.8s forwards, 0.5s backtoblue 5.3s forwards;
   z-index: 50050505050;
@@ -94,24 +98,24 @@ header .logo svg #Path_16 {
   transform-box: fill-box;
 }
 
-header .logo svg #Path_17 {
+header .logo #logodesktop #Path_17 {
   -webkit-animation: 0.3s appear 3.3s forwards, 0.5s backtoblue 5.3s forwards;
           animation: 0.3s appear 3.3s forwards, 0.5s backtoblue 5.3s forwards;
 }
 
-header .logo svg #syntax {
+header .logo #logodesktop #syntax {
   -webkit-animation: 0.3s appear 4.3s forwards;
           animation: 0.3s appear 4.3s forwards;
   opacity: 0;
 }
 
-header .logo svg #and {
+header .logo #logodesktop #and {
   -webkit-animation: 0.3s appear 4.6s forwards;
           animation: 0.3s appear 4.6s forwards;
   opacity: 0;
 }
 
-header .logo svg #scope {
+header .logo #logodesktop #scope {
   -webkit-animation: 0.3s appear 4.9s forwards;
           animation: 0.3s appear 4.9s forwards;
   opacity: 0;
@@ -128,6 +132,7 @@ header nav ul {
   display: flex;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 header nav ul li {
@@ -822,6 +827,106 @@ footer .nav-link img {
     font-size: 1.45vw;
     padding: 1.04vw 2.6vw;
   }
+  .home-about .home-about-main-desc .graylogo {
+    width: 31vw;
+    top: -7.3vw;
+  }
+  .home-about h2 {
+    font-size: 2vw;
+    line-height: 2.96vw;
+  }
+  .home-about .home-about-main-desc p {
+    font-size: 1.14vw;
+    line-height: 2.3vw;
+  }
+  .home-about .about-carousel .item .item-avatar {
+    width: 7.8vw;
+    height: 7.8vw;
+  }
+  .home-about .about-carousel .item h4 {
+    font-size: 1vw;
+    line-height: 1.5vw;
+  }
+  .home-about .about-carousel .item h6 {
+    font-size: 0.85vw;
+    line-height: 1.2vw;
+  }
+  .home-about .about-carousel {
+    padding-right: 5.2vw;
+  }
+  .home-about .about-carousel .owl-nav button.owl-next {
+    top: 4vw;
+  }
+  .home-about .about-carousel .owl-nav button.owl-next img {
+    width: 2vw;
+  }
+  .home-about .home-about-bottom {
+    margin-top: 9.3vw;
+    margin-bottom: 8.3vw;
+  }
+  .home-about .home-about-bottom h3 {
+    font-size: 1.1vw;
+    line-height: 1.7vw;
+  }
+  .home-about .home-about-bottom p {
+    font-size: 1.1vw;
+    line-height: 1.9vw;
+  }
+  .home-services {
+    padding: 6.25vw 0;
+  }
+  .home-services h2 {
+    font-size: 2.1vw;
+    line-height: 3.2vw;
+  }
+  .home-services .service-item .service-item-img {
+    height: 5vw;
+  }
+  .home-services .service-item h4 {
+    font-size: 1.4vw;
+    line-height: 1.9vw;
+  }
+  .home-services .home-services-desc {
+    font-size: 1.1vw;
+    line-height: 1.9vw;
+    margin-top: 2.6vw;
+  }
+  .home-services .home-services-desc .btn-syntax-primary {
+    margin-top: 2.6vw;
+    font-size: 1.2vw;
+    line-height: 1.9vw;
+  }
+  .home-blocks .block-item .block-content h3 {
+    font-size: 1.3vw;
+    line-height: 1.7vw;
+  }
+  .home-blocks .block-item .block-content p {
+    font-size: 1vw;
+    line-height: 1.7vw;
+  }
+  .home-blocks .block-item.contact-block h2 {
+    font-size: 1.9vw;
+    line-height: 2.7vw;
+  }
+  .home-blocks .block-item.contact-block .btn-syntax-primary {
+    font-size: 1.3vw;
+  }
+  .home-blocks {
+    padding-top: 7.8vw;
+    padding-bottom: 7.8vw;
+  }
+  footer {
+    font-size: 1.1vw;
+  }
+  footer .nav-link img {
+    width: 1.1vw;
+  }
+  footer .nav-link {
+    font-size: 1.1vw;
+  }
+  footer .footer-logo {
+    width: 9.3vw;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1919px) {
@@ -830,9 +935,140 @@ footer .nav-link img {
   }
 }
 
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .container {
+    max-width: 90vw;
+  }
+}
+
 @media (min-width: 1920px) {
   .container {
     max-width: 1630px !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  #logodesktop {
+    display: none;
+  }
+  header .logo {
+    width: 50px;
+    margin: 10px;
+  }
+  header .logo #logomobile {
+    display: block;
+    width: 100%;
+  }
+  header {
+    height: auto;
+  }
+  header .mobile-menu {
+    background: transparent;
+    border: none;
+    padding: 0 15px 0 0;
+    outline: none;
+  }
+  .hero-img {
+    display: none;
+  }
+  .home-blocks .block-item.left .block-content,
+  .home-blocks .block-item.right .block-content {
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  header .logo,
+  header .logo svg path {
+    -webkit-animation: none !important;
+            animation: none !important;
+    position: static !important;
+  }
+  header .logo svg #Group_1 path {
+    opacity: 1;
+    fill: #1854d0;
+  }
+  header .logo svg #syntax,
+  header .logo svg #and,
+  header .logo svg #scope {
+    opacity: 1;
+    -webkit-animation: none !important;
+            animation: none !important;
+  }
+  .home-hero:before {
+    -webkit-animation: none;
+            animation: none;
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home-blocks .block-item.contact-block h2 {
+    font-size: 26px;
+    line-height: 38px;
+    letter-spacing: 0px;
+  }
+  .home-services .service-item .service-item-img {
+    height: 65px;
+  }
+  .home-services .service-item h4 {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    position: fixed;
+    top: 0;
+    background: white;
+    left: 0;
+    right: 0;
+    z-index: 5050505050;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+  }
+  .home-about .home-about-main-desc .graylogo {
+    width: 100%;
+    top: 100px;
+  }
+  .home-about .about-carousel {
+    padding-right: 0;
+  }
+  .home-services .service-item {
+    border-right: none;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .home-hero {
+    text-align: center;
+  }
+  header nav ul li.active:after {
+    display: none;
+  }
+  header nav ul li {
+    padding: 20px 0;
+  }
+  header nav {
+    margin-left: 0;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 5050505050;
+    background: rgba(255, 255, 255, 0.952);
+    display: none;
+  }
+  header nav ul {
+    height: auto !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=main.css.map */

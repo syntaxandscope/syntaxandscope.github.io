@@ -7,7 +7,19 @@ $(function() {
         autoplay:true,
         autoplayTimeout:3000,
         autoplayHoverPause:false,
-        items:3,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            768:{
+              items:2
+            },
+            992:{
+                items:3,
+            }
+        },
         nav: true,
         navText: ["","<img src='assets/nav-next.svg'>"]
     })
@@ -31,4 +43,9 @@ $(function() {
     .pauseFor(1000)
     .start();
  }, 6000);
+
+ $('.mobile-menu').click(function(e){
+   e.preventDefault();
+   $('#mainMenu').slideToggle(500);
+ })
 });

@@ -1,0 +1,139 @@
+@keyframes animateslash {
+    0% {
+      transform: translate(21vw, 0) rotate(-25deg) scale(14);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translate(-5.394px, -5.424px) rotate(360deg) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bg {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes heroimg {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 50.67vw;
+    }
+  }
+  @keyframes homehero {
+    0% {
+      right: 200vw;
+      width: 400vw;
+      height: 100vh;
+    }
+    50% {
+      right: -100vw;
+      width: 400vw;
+      height: 100vh;
+    }
+  
+    100% {
+      right: 9.26vw;
+      width: 43.12vw;
+      height: 100vh;
+    }
+  }
+  
+  @keyframes goout {
+    0% {
+      right: 9.26vw;
+      height: 100vh;
+    }
+    100% {
+      right: -9.26vw;
+      top: calc(-100vh - 100px);
+      height: 100vh;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      top: -100px;
+      left: -50px;
+      opacity: 0;
+    }
+    to {
+      left: 0;
+      top: 0;
+      opacity: 1;
+    }
+  }
+  @keyframes backtoblue {
+    to {
+      fill: $blue;
+    }
+  }
+  
+  @keyframes flash {
+    0% {
+      transform: translate(-5.394px, -5.424px) rotate(0) scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: translate(-5.394px, -5.424px) rotate(0) scale(2);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translate(-5.394px, -5.424px) rotate(0) scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes path13 {
+    0% {
+      transform: translate(15px, 20px) rotate(90deg);
+    }
+    100% {
+      transform: translate(-5.401px, 0px) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes hidescroll {
+    to {
+      height: auto;
+      overflow-y: visible;
+    }
+  }
+  
+  @keyframes path14 {
+    0% {
+      transform: translate(-26px, -33px) rotate(90deg);
+    }
+    100% {
+      transform: translate(-5.401px, -12.795px) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes logoToTop {
+    0% {
+      width: 30vw;
+      top: 18vw;
+      left: 5vw;
+    }
+    100% {
+      width: 9vw;
+      top: 1vw;
+      left: 1vw;
+    }
+  }
