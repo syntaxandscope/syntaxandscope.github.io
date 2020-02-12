@@ -196,7 +196,7 @@ header {
     content: " ";
     background: $blue;
     position: absolute;
-
+z-index: 99999999999999999999999;
     transform: skewX(-20deg);
     top: -5.1vw;
     right: 9.26vw;
