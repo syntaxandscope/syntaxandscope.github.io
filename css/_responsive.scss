@@ -26,7 +26,6 @@
       padding: 1.04vw 2.6vw;
     }
   }
-  
 }
 
 @media (min-width: 1200px) and (max-width: 1919px) {
@@ -133,6 +132,157 @@
   footer .footer-logo {
     width: 9.3vw;
   }
+  .about-hero {
+    padding: 7.8vw 0;
+    .hero-left {
+      box-shadow: -1.5vw 1.5vw 0px rgba(0, 0, 0, 0.05);
+      padding: 2.7vw 4.7vw;
+      h1 {
+        font-size: 2.5vw;
+        line-height: 3.8vw;
+        padding: 0vw;
+        margin: 0vw 0vw 1.1vw;
+      }
+      p {
+        font-size: 1.3vw;
+        line-height: 1.9vw;
+        padding: 0vw;
+        margin: 0vw 0vw 0.6vw;
+      }
+    }
+    .hero-right {
+      padding: 3.2vw 0vw 2.1vw;
+    }
+  }
+  .our-mission-vision {
+    margin: 7.9vw 0vw 0vw;
+    .container {
+      top: -7.9vw;
+    }
+    .our-ms-box {
+      padding: 2.9vw 3.2vw;
+      h2 {
+        font-size: 1.9vw;
+        line-height: 2.9vw;
+        padding: 0vw;
+        margin: 0vw 0vw 1.1vw;
+      }
+      p {
+        font-size: 1.1vw;
+        line-height: 2.1vw;
+        padding: 0vw;
+        margin: 0vw 0vw 0.6vw;
+      }
+    }
+  }
+  .meet-our-team {
+    padding: 1.6vw 0vw 7.9vw;
+    .meet-header {
+      margin: 0vw 0vw 3.7vw;
+      h2 {
+        font-size: 2.5vw;
+        line-height: 3.8vw;
+        padding: 0vw;
+        margin: 0vw 0vw 0.3vw;
+      }
+      p {
+        font-size: 1.4vw;
+        line-height: 1.8vw;
+        padding: 0vw;
+        margin: 0vw 0vw 0.6vw;
+      }
+    }
+    .member {
+      h3 {
+        font-size: 1.4vw;
+        line-height: 2.1vw;
+        padding: 0vw;
+        margin: 1.1vw 0vw 0.3vw;
+      }
+      h4 {
+        font-size: 1.1vw;
+        line-height: 1.6vw;
+        padding: 0vw;
+        margin: 0vw 0vw 0.3vw;
+      }
+    }
+  }
+  .services-hero {
+    padding: 8.4vw 0vw;
+    h1 {
+      font-size: 4.5vw;
+      line-height: 5.4vw;
+      padding: 0vw;
+      margin: 0vw 0vw 0.4vw;
+    }
+    p {
+      font-size: 1.2vw;
+      line-height: 2.1vw;
+      padding: 0vw 0vw 0vw 3.2vw;
+      margin: 0vw 0vw 0.7vw;
+    }
+    &:after {
+      bottom: -5vw;
+      border-width: 6vw 6.5vw 0 6.5vw;
+    }
+  }
+  .services-content {
+    #pills-tab .nav-item .nav-link svg {
+      height: 5vw;
+      margin: 0vw 0vw 1.1vw;
+    }
+    h3 {
+      font-size: 1.1vw;
+      line-height: 1.9vw;
+      padding: 0vw;
+      margin: 0vw 0vw 2.1vw;
+    }
+    .tab-content {
+      margin: 3.7vw 0vw 0vw;
+      h2 {
+        font-size: 1.7vw;
+        line-height: 2vw;
+        padding: 0vw;
+        margin: 0vw 0vw 2.1vw;
+      }
+      p {
+        font-size: 1.4vw;
+        line-height: 2.9vw;
+        padding: 0vw;
+        margin: 0vw;
+      }
+    }
+  }
+  .contact-form {
+    .contact-form-inner {
+      padding: 4.5vw 3.7vw;
+      h1 {
+        font-size: 2.1vw;
+        line-height: 3.2vw;
+        margin: 0vw 0vw 0.3vw;
+      }
+      h3 {
+        font-size: 1.2vw;
+        line-height: 1.4vw;
+        margin: 1.6vw 0vw 0.3vw;
+      }
+      p {
+        font-size: 1.2vw;
+        line-height: 1.8vw;
+      }
+      .form-control {
+        padding: 1.6vw 1.1vw;
+        font-size: 1.2vw;
+      }
+      .btn-syntax-primary.btn-o {
+        font-size: 1.1vw;
+        line-height: 0.6vw;
+        padding: 1.5vw 2.7vw;
+        margin: 1.6vw 0vw 0vw;
+        border: 2px solid #fff;
+      }
+    }
+  }
 }
 @media (min-width: 1200px) and (max-width: 1600px) {
   .container {
@@ -143,16 +293,17 @@
   .container {
     max-width: 1630px !important;
   }
-  .home-hero .container{
-      max-width: 85vw !important;
+  .home-hero .container {
+    max-width: 85vw !important;
   }
 }
 @media (max-width: 1199px) {
   #logodesktop {
     display: none;
   }
-  header .logo {
-    width: 50px;
+  header .logo,
+  header.home-header .logo {
+    width: 40px;
     margin: 10px;
   }
   header .logo #logomobile {
@@ -167,6 +318,9 @@
       border: none;
       padding: 0 15px 0 0;
       outline: none;
+      img {
+        width: 30px;
+      }
     }
   }
 
@@ -198,9 +352,102 @@
     animation: none;
     display: none;
   }
+  .about-hero .hero-left:after {
+    display: none;
+  }
+  .about-hero {
+    padding: 50px 0;
+    .hero-right {
+      padding: 0;
+      img {
+        width: calc(100% - 60px);
+        margin: 0 auto -140px;
+        display: block;
+        position: relative;
+        float: none;
+        top: -140px;
+      }
+    }
+  }
+  .about-hero .hero-left {
+    padding: 30px 30px 150px 30px;
+    h1 {
+      font-size: 28px;
+      line-height: 42px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+  .our-mission-vision .our-ms-box h2 {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .our-mission-vision .our-ms-box p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .our-mission-vision .our-ms-box {
+    padding: 30px;
+  }
+  .our-mission-vision .container {
+    margin-bottom: -100px;
+  }
+  .meet-our-team .meet-header h2 {
+    font-size: 32px;
+    line-height: 52px;
+  }
+  .meet-our-team .meet-header p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .meet-our-team .member {
+    margin-bottom: 50px;
+  }
+  .meet-our-team .member h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .meet-our-team .member h4 {
+    font-size: 18px;
+  }
+  .meet-our-team {
+    padding-bottom: 50px;
+  }
+  .services-hero {
+    padding: 60px 0;
+    margin-bottom: 100px;
+    h1 {
+      font-size: 50px;
+    }
+    &:after {
+      bottom: -45px;
+
+      border-width: 50px 60px 0 60px;
+    }
+  }
+  .services-content #pills-tab .nav-item .nav-link svg {
+    height: 65px;
+    margin-bottom: 5px;
+  }
+  .services-content #pills-tab .nav-item .nav-link h3 {
+    font-size: 16px;
+  }
+  .services-content .tab-content h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .services-content .tab-content p {
+    font-size: 18px;
+    line-height: 35px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  header nav {
+    margin-left: 0;
+  }
   .home-blocks .block-item.contact-block h2 {
     font-size: 26px;
     line-height: 38px;
@@ -227,31 +474,31 @@
     display: flex;
     width: 100vw;
   }
-  .home-about .home-about-main-desc .graylogo{
-      width: 100%;
-      top:100px;
+  .home-about .home-about-main-desc .graylogo {
+    width: 100%;
+    top: 100px;
   }
-  .home-about .about-carousel{
-      padding-right: 0;
+  .home-about .about-carousel {
+    padding-right: 0;
   }
-  .home-services .service-item{
-      border-right: none;
-      flex-basis: 100%;
-      margin-bottom: 20px;
+  .home-services .service-item {
+    border-right: none;
+    flex-basis: 100%;
+    margin-bottom: 20px;
   }
-  .home-hero{
-      text-align: center;
+  .home-hero {
+    text-align: center;
   }
-  header nav ul li.active:after{
-      display: none;
+  header nav ul li.active:after {
+    display: none;
   }
-  header nav ul li{
-      padding:20px 0;
+  header nav ul li {
+    padding: 20px 0;
   }
   header nav {
     margin-left: 0;
     position: absolute;
-    top: 72px;
+    top: 62px;
     left: 0;
     right: 0;
     height: 100vh;
@@ -263,94 +510,165 @@
       flex-direction: column;
     }
   }
+  .about-hero {
+    padding-top: 130px;
+  }
+  .services-content #pills-tab {
+    flex-direction: column;
+    .nav-item .nav-link {
+      text-align: left;
+    }
+    svg {
+    }
+    h3 {
+      display: inline;
+    }
+  }
+  .services-content #pills-tab .nav-item .nav-link svg {
+    display: inline;
+    width: 30px;
+    height: auto;
+    margin-right: 20px;
+  }
+  .services-content #pills-tab .nav-item .nav-link {
+    border-bottom: 2px solid #f3f3f3;
+  }
+  .services-content #pills-tab .nav-item .nav-link.active {
+    border-bottom: 2px solid $blue;
+  }
 }
 
 @media (max-width: 767px) {
-    .home-hero h1 {
-        font-size: 28px;
-        line-height: 42px;
+  .home-hero h1 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+  .btn-syntax-primary {
+    font-size: 18px;
+    padding: 15px 50px;
+  }
+  .home-about h2 {
+    font-size: 26px;
+    line-height: 50px;
+  }
+  .home-about .home-about-main-desc p {
+    font-size: 18px;
+    line-height: 35px;
+  }
+  .home-about .home-about-bottom h3 {
+    font-size: 22px;
+    line-height: 36px;
+  }
+  .home-about .home-about-bottom p {
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .home-about .home-about-bottom {
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+  .home-services h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .home-services .service-item h4 {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .home-services .home-services-desc {
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 20px;
+  }
+  .home-services .home-services-desc .btn-syntax-primary {
+    font-size: 18px;
+    margin-top: 50px;
+  }
+  .home-blocks {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .home-blocks .block-item .block-content {
+    padding: 30px;
+  }
+  .home-blocks .block-item .block-content h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .home-blocks .block-item .block-content p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .home-blocks .block-item.contact-block h2 {
+    font-size: 22px;
+    line-height: 35px;
+    letter-spacing: 0px;
+    margin-bottom: 30px;
+  }
+  .home-blocks .block-item.contact-block .btn-syntax-primary {
+    font-size: 20px;
+  }
+  footer {
+    font-size: 16px;
+    text-align: center;
+  }
+  footer .nav-item.border-right {
+    border-right: none !important;
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+  footer .nav-link {
+    font-size: 16px;
+  }
+  .home-hero {
+    padding: 240px 0 170px;
+  }
+  .about-hero {
+    padding-top: 0;
+  }
+  .about-hero .hero-left {
+    box-shadow: none;
+    padding-top: 150px;
+  }
+  .about-hero .hero-left p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .services-hero {
+    padding-top: 150px;
+    h1 {
+      font-size: 28px;
     }
-    .btn-syntax-primary {
-        font-size: 18px;
-        padding: 15px 50px;
+    img {
+      width: 150px;
     }
-    .home-about h2 {
-        font-size: 26px;
-        line-height: 50px;
+    p {
+      padding: 0;
+      text-align: center;
+      font-size: 16px;
+      line-height: 30px;
     }
-    .home-about .home-about-main-desc p {
-        font-size: 18px;
-        line-height: 35px;
+  }
+  .contact-form{
+    padding-bottom: 0px;
+  }
+  .contact-form .contact-form-inner {
+    box-shadow: none;
+    padding: 30px;
+    h1 {
+      font-size: 28px;
+      line-height: 40px;
     }
-    .home-about .home-about-bottom h3 {
-        font-size: 22px;
-        line-height: 36px;
+    h3 {
+      font-size: 18px;
+      margin-top: 10px;
     }
-    .home-about .home-about-bottom p {
-        font-size: 17px;
-        line-height: 30px;
+    p {
+      font-size: 16px;
     }
-    .home-about .home-about-bottom {
-        margin-top: 80px;
-        margin-bottom: 60px;
-    }
-    .home-services h2 {
-        font-size: 28px;
-        line-height: 40px;
-    }
-    .home-services .service-item h4 {
-        font-size: 20px;
-        line-height: 35px;
-    }
-    .home-services .home-services-desc {
-        font-size: 18px;
-        line-height: 32px;
-        margin-top: 20px;
-    }
-    .home-services .home-services-desc .btn-syntax-primary {
-        font-size: 18px;
-        margin-top: 50px;
-    }
-    .home-blocks {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .home-blocks .block-item .block-content{
-        padding: 30px;
-    }
-    .home-blocks .block-item .block-content h3 {
-        font-size: 20px;
-        line-height: 30px;
-    }
-    .home-blocks .block-item .block-content p {
-        font-size: 16px;
-        line-height: 30px;
-    }
-    .home-blocks .block-item.contact-block h2 {
-        font-size: 22px;
-        line-height: 35px;
-        letter-spacing: 0px;
-        margin-bottom: 30px;
-
-    }
-    .home-blocks .block-item.contact-block .btn-syntax-primary {
-        font-size: 20px;
-    }
-    footer{
-        font-size: 16px;
-        text-align: center;
-    }
-    footer .nav-item.border-right{
-        border-right:none !important;
-        flex-basis: 100%;
-        margin-bottom: 10px;
-        
-    }
-    footer .nav-link{
-        font-size: 16px;
-
-    }
-    .home-hero {
-        padding: 240px 0 170px;
-    }
+  }
+  .contact-form .contact-form-inner .btn-syntax-primary.btn-o{
+    margin-top: 10px;
+    font-size: 18px;
+  }
 }
