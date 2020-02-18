@@ -1671,6 +1671,9 @@ footer .nav-link img {
 }
 
 @media (max-width: 767px) {
+  .services-hero .hero-right p {
+    padding-left: 0;
+  }
   .home-hero h1 {
     font-size: 28px;
     line-height: 42px;
