@@ -457,7 +457,7 @@ footer {
   .hero-left {
     height: 100%;
     background: $blue;
-    padding: 50px 90px;
+    padding: 30px 60px 30px 30px;
     position: relative;
     box-shadow: -35px 35px 0px rgba(0, 0, 0, 0.05);
     &:after {
@@ -476,13 +476,14 @@ footer {
       color: #fff;
       font-size: 48px;
       line-height: 72px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       font-weight: bold;
       text-transform: uppercase;
     }
     p {
-      font-size: 22px;
-      line-height: 36px;
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 5px;
       color: #fff;
     }
   }
@@ -605,10 +606,14 @@ footer {
   img {
   }
   p {
-    font-size: 22px;
-    line-height: 40px;
+    font-size: 18px;
+    line-height: 30px;
     color: #fff;
-    padding-left: 60px;
+  }
+  .hero-right {
+    p {
+      padding-left: 60px;
+    }
   }
 }
 .services-content {

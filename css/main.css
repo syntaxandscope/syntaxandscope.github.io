@@ -513,7 +513,7 @@ footer .nav-link img {
 .about-hero .hero-left {
   height: 100%;
   background: #1854d0;
-  padding: 50px 90px;
+  padding: 30px 60px 30px 30px;
   position: relative;
   -webkit-box-shadow: -35px 35px 0px rgba(0, 0, 0, 0.05);
           box-shadow: -35px 35px 0px rgba(0, 0, 0, 0.05);
@@ -536,14 +536,15 @@ footer .nav-link img {
   color: #fff;
   font-size: 48px;
   line-height: 72px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .about-hero .hero-left p {
-  font-size: 22px;
-  line-height: 36px;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 5px;
   color: #fff;
 }
 
@@ -691,9 +692,12 @@ footer .nav-link img {
 }
 
 .services-hero p {
-  font-size: 22px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 30px;
   color: #fff;
+}
+
+.services-hero .hero-right p {
   padding-left: 60px;
 }
 
@@ -1259,19 +1263,19 @@ footer .nav-link img {
   .about-hero .hero-left {
     -webkit-box-shadow: -1.5vw 1.5vw 0px rgba(0, 0, 0, 0.05);
             box-shadow: -1.5vw 1.5vw 0px rgba(0, 0, 0, 0.05);
-    padding: 2.7vw 4.7vw;
+    padding: 1.6vw 3.2vw 1.6vw 1.6vw;
   }
   .about-hero .hero-left h1 {
     font-size: 2.5vw;
     line-height: 3.8vw;
     padding: 0vw;
-    margin: 0vw 0vw 1.1vw;
+    margin: 0vw 0vw 0.5vw;
   }
   .about-hero .hero-left p {
-    font-size: 1.3vw;
-    line-height: 1.9vw;
+    font-size: 0.9vw;
+    line-height: 1.6vw;
     padding: 0vw;
-    margin: 0vw 0vw 0.6vw;
+    margin: 0vw 0vw 0.3vw;
   }
   .about-hero .hero-right {
     padding: 3.2vw 0vw 2.1vw;
@@ -1337,10 +1341,12 @@ footer .nav-link img {
     margin: 0vw 0vw 0.4vw;
   }
   .services-hero p {
-    font-size: 1.2vw;
-    line-height: 2.1vw;
-    padding: 0vw 0vw 0vw 3.2vw;
+    font-size: 1vw;
+    line-height: 1.5vw;
     margin: 0vw 0vw 0.7vw;
+  }
+  .services-hero .hero-right p {
+    padding: 0vw 0vw 0vw 3.2vw;
   }
   .services-hero:after {
     bottom: -5vw;
