@@ -24,7 +24,28 @@ $(function() {
   });
 
   var pageMainTitle = document.getElementById("pageMainTitle");
-
+  var itr = 0;
+  if ($("#pills-tab")) {
+    // .services-content #pills-tab .nav-item .nav-link
+    var servicesInterval = setInterval(function() {
+      if (itr == $("#pills-tab .nav-item").length - 1) {
+        $("#pills-tab .nav-item:eq(0) .nav-link").trigger("click");
+        itr = -1;
+      } else {
+        $("#pills-tab .nav-item .nav-link.active")
+          .closest(".nav-item")
+          .next()
+          .find(".nav-link")
+          .trigger("click");
+      }
+      itr++;
+    }, 5000);
+    $("#pills-tab .nav-item .nav-link").click(function(event) {
+      if (event.hasOwnProperty("originalEvent")) {
+        clearInterval(servicesInterval);
+      }
+    });
+  }
   if (pageMainTitle) {
     var typewriter = new Typewriter(pageMainTitle, {
       loop: true

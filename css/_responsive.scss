@@ -137,8 +137,7 @@
     .hero-left {
       box-shadow: -1.5vw 1.5vw 0px rgba(0, 0, 0, 0.05);
 
-      padding: 1.6vw 3.2vw 1.6vw 1.6vw;
-      
+      padding: 1.6vw 7.3vw 1.6vw 1.6vw;
       h1 {
         font-size: 2.5vw;
         line-height: 3.8vw;
@@ -147,15 +146,25 @@
       }
       p {
         font-size: 0.9vw;
-        line-height: 1.6vw;
+        line-height: 1.5vw;
         padding: 0vw;
-        margin: 0vw 0vw 0.3vw;
+        margin: 0vw 0vw 0.5vw;
         
       }
     }
     .hero-right {
       padding: 3.2vw 0vw 2.1vw;
     }
+  }
+  .who-we-are{
+    padding: 4.7vw 0vw;
+   h1{
+    font-size: 2.7vw;
+   }
+   p{
+    font-size: 1.1vw;
+    line-height: 1.7vw;
+   }
   }
   .our-mission-vision {
     margin: 7.9vw 0vw 0vw;
@@ -683,4 +692,11 @@
     margin-top: 10px;
     font-size: 18px;
   }
+  .who-we-are h1{
+    font-size: 28px;
+  }
+  .who-we-are p {
+    font-size: 18px;
+    line-height: 30px;
+}
 }
