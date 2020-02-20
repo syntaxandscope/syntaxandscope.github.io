@@ -457,7 +457,7 @@ footer {
   .hero-left {
     height: 100%;
     background: $blue;
-    padding: 30px 140px 30px 30px;
+    padding: 30px 80px 30px 30px;
     position: relative;
     box-shadow: -35px 35px 0px rgba(0, 0, 0, 0.05);
     &:after {
@@ -465,9 +465,9 @@ footer {
       position: absolute;
       background: url("../assets/about-triangle.svg") no-repeat;
       height: 100%;
-      width: 35%;
+      width:42%;
       top: 0;
-      right: calc(-35% + 1px);
+      right: calc(-42% + 1px);
       bottom: 0;
       background-size: cover;
       background-position: top left;
