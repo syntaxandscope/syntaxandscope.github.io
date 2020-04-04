@@ -95,8 +95,8 @@ header .logo #logodesktop #Path_15 {
 }
 
 header .logo #logodesktop #Path_16 {
-  -webkit-animation: 1s animateslash 2s forwards ease, 0.3s flash 2.8s forwards, 0.5s backtoblue 5.3s forwards;
-          animation: 1s animateslash 2s forwards ease, 0.3s flash 2.8s forwards, 0.5s backtoblue 5.3s forwards;
+  -webkit-animation: 1s animateslash 2s forwards ease, 0.3s flash 2.8s forwards, 0.5s backtoblue 5.3s forwards;
+          animation: 1s animateslash 2s forwards ease, 0.3s flash 2.8s forwards, 0.5s backtoblue 5.3s forwards;
   z-index: 50050505050;
   position: relative;
   z-index: 5050;
@@ -247,8 +247,8 @@ header nav ul li.active:after {
   right: 9.26vw;
   width: 43.12vw;
   height: 100vh;
-  -webkit-animation: 2s homehero 0s forwards ease-out, 0.4s goout 2s forwards ease-in-out;
-          animation: 2s homehero 0s forwards ease-out, 0.4s goout 2s forwards ease-in-out;
+  -webkit-animation: 2s homehero 0s forwards ease-out, 0.4s goout 2s forwards ease-in-out;
+          animation: 2s homehero 0s forwards ease-out, 0.4s goout 2s forwards ease-in-out;
 }
 
 .home-hero:after {
@@ -312,6 +312,8 @@ header nav ul li.active:after {
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto 15px;
+  -webkit-box-shadow: 0px 5px 70px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 5px 70px rgba(0, 0, 0, 0.08);
 }
 
 .home-about .about-carousel .item h4 {
@@ -641,7 +643,7 @@ footer .nav-link img {
 .meet-our-team .member .member-img img {
   position: absolute;
   top: 0;
-  height: 100%;
+  width: 100%;
   left: 0;
 }
 
